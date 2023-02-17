@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+/* ## Colors
+
+### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.title{
+    margin-bottom: 15px;
+}
+
+.title span{
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+.subtitle{
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: hsl(209, 33%, 12%);
+}
+
+form{
+    width: 100%;
+}
+
+.form-left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.input-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.email{
+    width: 95%;
+    margin-right: 15px;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid hsl(223, 100%, 88%);
+}
+
+small{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    font-style: italic;
+    display: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+
+
+a{
+    text-decoration: none;
+    width: 25%;
+    font-size: 12px;
+    background: hsl(223, 87%, 63%);
+    padding: 11.5px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+
+form{
+    margin-bottom: 50px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social div i{
+    margin: 10px;
+    border: 1px solid hsl(0, 7%, 89%);
+    border-radius: 50%;
+    color: hsl(223, 87%, 63%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+}
+
+.copyright{
+    color: hsl(0, 0%, 59%);
+    margin: 15px;
+    font-size: 12px;
+}
+
+.main-image img{
+    width: 100%;
+}
+
+.social div i:hover{
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+}
+
+
+/* Error class */
+
+.error{
+    border: 1px solid hsl(354, 100%, 66%);
+    color: hsl(354, 100%, 66%);
+}
+
+.error::placeholder{
+    color: hsl(354, 100%, 66%);
+}
+
+.error+small{
+    color: hsl(354, 100%, 66%);
+}
+
+/* Success Class */
+
+.success{
+    border: 1px solid green;
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    .container{
+        width: 90%;
+    }
+
+    .logo{
+        margin-top: 30px;
+    }
+
+    .logo img{
+        margin: 0 auto;
+        width: 65%;
+        height: auto;
+    }
+
+    .title h1{
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        font-weight: 300;
+        
+    }
+
+    .input-info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-left{
+        align-items: center;
+    }
+
+    input::placeholder{
+        color: hsl(223, 100%, 88%);
+    }
+
+    .email{
+        margin-right: 0px;
+        font-size: 12px;
+        width: 80%;
+        border: 1px solid hsl(223, 100%, 88%);
+    }
+
+    a{
+        margin-top: 10px;
+        width: 80%;
+        font-weight: 600;
+        font-size: 11px;
+    }
+
+    .main-image img{
+        margin-bottom: 100px;
+    }
+
+    .social div i{
+        font-size: 15px;
+        height: 30px;
+        width: 30px;
+    }
+}

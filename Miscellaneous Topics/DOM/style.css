@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: steelblue;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin: 0 auto;
+    background: skyblue;
+    height: 500px;
+    width: 500px;
+    border: 2px solid white;
+    color: black;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
