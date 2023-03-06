@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header CSS below */
+.header-container{
+    background: url("images/bg-hero-desktop.svg");
+    background-color: hsl(193, 100%, 96%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+header{
+    padding-top: 50px;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.top-logo{
+    margin-left: 5%;
+}
+.top-logo img{
+    height: 30px;
+    width: auto;
+}
+.try-free{
+    margin-right: 5%;
+    padding: 15px 60px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.try-free a{
+    color: black;
+    font-weight: 700;
+}
+
+section{
+    display: flex;
+    padding: 0 5%;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+.section-text{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+.section-text p{
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.section-text a{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    padding: 20px 60px;
+    width: 50%;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.section-text a:hover{
+    opacity: 0.5;
+}
+.section-illustration{
+    width: 60%;
+    text-align: center;
+}
+.section-illustration img{
+    width: 90%;
+    height: auto;
+}
+
+/* Three Articles CSS Below */
+
+article{
+    height: 450px;
+    margin: 0 10%;
+    display: flex;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+article p{
+    color: hsl(208, 11%, 55%);
+}
+article h2{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+.article-text{
+    width: 65%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.article-image{
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+}
+article img{
+    width: 90%;
+    height: auto;
+}
+.article-one p{
+    padding-right: 80px;
+}
+.article-four-parent{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.article-three{
+    margin-bottom: 300px;
+}
+.article-four{
+    position: absolute;
+    transform: translateY(-60%);
+    background-color: white;
+    box-sizing: content-box;
+    padding: 70px 100px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.article-four h2{
+    color: hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+.article-four a{
+    width: 70%;
+    padding: 25px 100px;
+    color: white;
+    background: hsl(322, 100%, 66%);
+    border-radius: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+.article-four a:hover{
+    opacity: 0.5;
+}
+
+/* Footer css Below */
+footer{
+    
+    color: white;
+    background: hsl(192, 100%, 9%);
+    padding: 8% 8%;
+}
+.logo-contact img{
+    margin-bottom: 20px;
+}
+.location, .phone, .email{
+    display: flex;
+    font-size: 16px;
+}
+.location{
+    padding-bottom: 15px;
+}
+.location img, .phone img, .email img{
+    width: 25px;
+    height: auto;
+    padding: 5px;
+}
+.location img{
+    align-self: flex-start;
+}
+.footer-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-3-links, .last-3-links{
+    display: flex;
+    flex-direction: column;
+}
+.first-3-links a:hover, .last-3-links a:hover{
+    text-decoration: underline;
+}
+footer a{
+    color: white;
+    margin-bottom: 15px;
+}
+.social i{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 10px;
+}
+i:hover{
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+}
+.copyrights{
+    text-align: end;
+    font-size: 14px;
+}
+
+/* Media Querries */
+
+@media screen and (max-width: 1440px){
+    .section-text a{
+        font-size: 12px;
+        padding: 15px 70px;
+        width: 60%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .section-text a{
+        font-size: 12px;
+        padding: 15px 70px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .section-text a{
+        font-size: 12px;
+        padding: 20px 70px;
+        width: 75%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header-container{
+        background: url("images/bg-hero-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .top-logo img{
+        height: 25px;
+        width: auto;
+    }
+    .try-free{
+        margin-right: 5%;
+        padding: 10px 40px;
+    }
+    .try-free a{
+        font-size: 14px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-text{
+        width: 100%;
+        text-align: center;
+    }
+    .section-text h1{
+        padding: 0 10%;
+    }
+    .section-text p{
+        padding: 0 10%;
+    }
+    .section-text a{
+        align-self: center;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .section-illustration{
+        width: 100%;
+    }
+
+
+    article{
+        flex-direction: column-reverse;
+        height: 500px;
+    }
+
+    .article-image{
+        align-self: center;
+    }
+
+    .article-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .article-text p{
+        padding: 0;
+    }
+
+    .article-two{
+        flex-direction: column;
+    }
+
+    .article-three{
+        margin-bottom: 400px;
+    }
+
+    .footer-main{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social{
+        align-self: center;
+    }
+
+    .copyrights{
+        text-align: center;
+        font-size: 12px;
+        margin: 20px 0;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    .article-four{
+        padding: 50px 80px;
+    }
+    .article-four h2{
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    .article-four a{
+        width: 70%;
+        padding: 20px 80px;
+        border-radius: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .article-four{
+        padding: 25px 40px;
+        padding-bottom: 40px;
+    }
+    .article-four h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .article-four a{
+        width: 70%;
+        padding: 15px 60px;
+        border-radius: 40px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .article-four{
+        padding: 25px 40px;
+        padding-bottom: 40px;
+    }
+    .article-four h2{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .article-four a{
+        width: 90%;
+        padding: 10px 50px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .section-text a{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .section-text a{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    article{
+        /* height: 600px; */
+        
+    }
+    .article-text{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    article{
+        /* height: 800px; */
+    }
+    .article-text{
+        padding: 0 0px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    article{
+        height: 600px;
+    }
+    
+}
+

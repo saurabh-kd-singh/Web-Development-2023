@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+button:hover, a:hover{
+    opacity: 0.5;
+}
+/* Header CSS */
+header{
+    margin: 5% 5%;
+    text-align: center;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20%;
+}
+.banner img{
+    height: 35px;
+    width: auto;
+}
+.banner a{
+    color: hsl(322, 100%, 66%);
+    padding: 10px 30px;
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 30px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    font-size: 48px;
+    margin-bottom: 1%;
+    font-family: 'Poppins', sans-serif;
+}
+header p{
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 50px;
+}
+.intro a{
+    margin-bottom: 50px;
+    padding: 30px 100px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 60px;
+    font-weight: 700;
+}
+.main-illustration{
+    margin-bottom: 10%;
+}
+.main-illustration img{
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+.count{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.community, .message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.community h1, .message h1{
+    font-size: 100px;
+}
+.community p, .message p{
+    color: grey;
+    align-self: center;
+    font-size: 24px;
+}
+/* Article CSS */
+.text h2{
+    font-size: 38px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15%;
+    
+}
+.one{
+    background-color: hsl(207, 100%, 98%);
+    position: relative;
+}
+.one-wrapper::before{
+    content: '';
+    height: 200px;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("images/bg-section-top-desktop-1.svg");
+    background-position: center center;
+    background-size: cover;
+}
+.one-wrapper::after{
+    content: '';
+    height: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("images/bg-section-bottom-desktop-1.svg");
+    background-position: center center;
+    background-size: cover;
+}
+.text{
+    width: 60%;
+    margin-left: 5%;
+}
+.image{
+    width: 40%;
+    margin-right: 5%;
+}
+article img{
+    width: 90%;
+    height: auto;
+}
+.two-wrapper{
+    flex-direction: row-reverse;
+    margin: 300px 5%;
+}
+.two-wrapper .text{
+    width: 60%;
+}
+.two-wrapper .image{
+    width: 40%;
+}
+
+.three{
+    background-color: hsl(207, 100%, 98%);
+    position: relative;
+}
+.three-wrapper::before{
+    content: '';
+    height: 200px;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("images/bg-section-top-desktop-2.svg");
+    background-position: center center;
+    background-size: cover;
+}
+.three-wrapper::after{
+    content: '';
+    height: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("images/bg-section-bottom-desktop-2.svg");
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Community Build */
+
+.community-build{
+    text-align: center;
+    margin: 300px auto;
+}
+.community-build h2{
+    font-size: 42px;
+    margin-bottom: 2%;
+}
+.community-build a{
+    padding: 25px 80px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 700;
+}
+/* Footer */
+footer{
+    display: flex;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 100px 10%;
+    justify-content: space-between;
+    position: relative;
+}
+footer::before{
+    position: absolute;
+    content: "";
+    background-image: url("images/bg-footer-top-desktop.svg");
+    height: 200px;
+    left: 0;
+    top: -200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.logo-bottom{
+    margin-bottom: 1%;
+}
+.contact p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.phone, .email{
+    display: flex;
+    align-items: center;
+}
+.phone img, .email img{
+    padding-right: 10px;
+}
+.phone p, .email p{
+    align-self: center;
+    padding-top: 5px;
+}
+
+.social{
+    margin: 5% 0;
+}
+i{
+    font-size: 40px;
+    padding-right: 15px;
+}
+.newsletter p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.newsletter h2{
+    margin-bottom: 15px;
+}
+footer form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    padding: 15px 60px;
+    border-radius: 7px;
+}
+button{
+    padding: 15px 30px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:768px){
+    .community h1, .message h1{
+        font-size: 80px;
+    }
+    .community p, .message p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .community h1, .message h1{
+        font-size: 60px;
+    }
+    .community p, .message p{
+        font-size: 16px;
+    }
+
+    form{
+        flex-direction: column;
+    }
+    button{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    input, button{
+        align-self: self-start;
+    }
+}
+
+@media screen and (max-width: 586px){
+    .count{
+        flex-direction: column;
+    }
+    .wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .one-wrapper::before{
+        background-image: url("images/bg-section-top-mobile-1.svg");
+    }
+    .one-wrapper::after{
+        background-image: url("images/bg-section-bottom-mobile-1.svg");
+    }
+
+    .three-wrapper::before{
+        background-image: url("images/bg-section-top-mobile-2.svg");
+    }
+    .three-wrapper::after{
+        background-image: url("images/bg-section-bottom-mobile-2.svg");
+    }
+
+    footer::before{
+        background-image: url("images/bg-footer-top-mobile.svg");
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
+    .newsletter{
+        margin-bottom: 50px;
+    }
+    footer button{
+        margin-left: 35%;
+    }
+}

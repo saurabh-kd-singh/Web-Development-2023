@@ -353,6 +353,22 @@ footer .phone img, .email img{
     margin-right: 15px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+a:hover{
+    color: hsl(224, 93%, 58%);
+}
+
+footer .icons div:hover{
+    border-color: hsl(224, 93%, 58%);
+}
+
+footer .icons div:hover i{
+    color: hsl(224, 93%, 58%);
+}
+
 
 /* Error and  Success Class */
 

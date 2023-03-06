@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+
+        <style>
+
+            body{
+                background: white;
+                height: 100vh;
+            }
+
+            .container{
+                width: 950px;
+                margin: 0 auto;
+
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-auto-rows: minmax(100px, auto);
+                grid-gap: 10px;
+
+                grid-template-areas: 
+                "header header header header header header"
+                "left nav nav nav nav right"
+                "left main main main main right"
+                "left main main main main right"
+                "left section section section section right"
+                "left section section section section right"
+                "footer footer footer footer footer footer"
+                ;
+
+            }
+
+            .container > *{
+                padding: 30px;
+                background-color: #3bbced;
+                text-align: center;
+                color: white;
+            }
+
+            header{
+                grid-area: header;
+            }
+
+            nav{
+                grid-area: nav;
+            }
+
+            #left{
+                grid-area: left;
+            }
+
+            #right{
+                grid-area: right;
+            }
+
+            main{
+                grid-area: main;
+            }
+
+            section{
+                grid-area: section;
+            }
+
+            footer{
+                grid-area: footer;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+
+        <div class="container">
+
+            <header>Header</header>
+            <nav>Navigations</nav>
+            <Aside id="left">Left Side</Aside>
+            <Aside id="right">Right side</Aside>
+            <main>Main</main>
+            <section>Section</section>
+            <footer>Footer</footer>
+
+        </div>
+
+    </body>
+</html>
