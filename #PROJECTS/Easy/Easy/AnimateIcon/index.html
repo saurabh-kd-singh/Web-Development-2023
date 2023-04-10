@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animated Icon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link href="style.css" rel="stylesheet"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+        crossorigin="anonymous">
+
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                height: 100vh;
+                background: linear-gradient(to bottom, #D6EAF8, #F8CDDA);
+            }
+            h1{
+                text-align: center;
+                font-family: sans-serif;
+                color: #34495E;
+            }
+            .col{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #link, #battery, #hour{
+                font-size: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Some Animated Font Awesome Icons.</h1>
+        </header>
+
+        <main>
+            <div class="container mt-5">
+                <div class="row mb-5">
+                    <div class="col mb-5">
+                        <div class="rounded bg-white p-5 text-dark fa fa-fade" id="link"></div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="rounded bg-white p-5 text-dark fa" id="battery"></div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="rounded bg-white p-5 text-dark fa" id="hour"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col mb-5">
+                        <div class="rounded bg-white p-5 text-dark fa" id=""></div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="rounded bg-white p-5 text-dark fa" id=""></div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="rounded bg-white p-5 text-dark fa" id=""></div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" 
+        crossorigin="anonymous"></script>
+
+        <script>
+            // first row first column
+            function breakLink() {
+                let link = document.getElementById('link');
+                link.innerHTML = "&#xf0c1"
+
+                setTimeout(() => {link.innerHTML = "&#xf127"}, 1000);
+            }
+            breakLink();
+            setInterval(breakLink, 2000)
+
+            // first row second column
+            function batteryLife() {
+                let link = document.getElementById('battery');
+                link.innerHTML = "&#xf244"
+
+                setTimeout(() => {link.innerHTML = "&#xf243"}, 1000);
+                setTimeout(() => {link.innerHTML = "&#xf242"}, 2000);
+                setTimeout(() => {link.innerHTML = "&#xf241"}, 3000);
+                setTimeout(() => {link.innerHTML = "&#xf240"}, 4000);
+            }
+            batteryLife();
+            setInterval(batteryLife, 5000)
+
+            // first row second column
+            function hourGlass() {
+                let hour = document.getElementById('hour');
+                hour.innerHTML = "&#xf250"
+
+                setTimeout(() => {hour.innerHTML = "&#xf251"}, 1000);
+                setTimeout(() => {hour.innerHTML = "&#xf252"}, 2000);
+                setTimeout(() => {hour.innerHTML = "&#xf253"}, 3000);
+                setTimeout(() => {hour.innerHTML = "&#xf254"}, 4000);
+            }
+            hourGlass();
+            setInterval(hourGlass, 4000)
+
+        </script>
+    </body>
+</html>
